@@ -44,7 +44,6 @@ public class PayrollCalculator {
 
             }
 
-            buffreader.close();
 
 
             for(Employee emp: employees)
@@ -56,7 +55,7 @@ public class PayrollCalculator {
         }
 
         
-        
+        buffreader.close();
    
         catch(IOException e)
         {
