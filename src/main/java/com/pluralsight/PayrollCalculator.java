@@ -4,14 +4,14 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.*;
 import java.util.*;
-import java.util.regex.Pattern;
+
 
 public class PayrollCalculator {
 
     public static void main(String[] args) {
 
 
-        List<Employee> employees = new ArrayList<Employee>();
+        List<Employee> employees = new ArrayList<>();
         
 
         
@@ -19,13 +19,13 @@ public class PayrollCalculator {
 
 
             FileReader filereader = new FileReader("src/main/resources/employees.csv");
-            BufferedReader buffreader = new BufferedReader(filereader);
+            BufferedReader bufreader = new BufferedReader(filereader);
             
             String input;
 
 
             
-            while((input = buffreader.readLine())!= null)
+            while((input = bufreader.readLine())!= null)
             {
                 String[] employee = input.split("\\|");
 
@@ -44,7 +44,7 @@ public class PayrollCalculator {
 
             }
 
-            buffreader.close();
+            bufreader.close();
 
 
             for(Employee emp: employees)
