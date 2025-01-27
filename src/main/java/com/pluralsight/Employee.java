@@ -19,42 +19,20 @@ public class Employee {
     }
 
 
-    public void setPayRate(float payRate) {
-        this.payRate = payRate;
-    }
 
-    public void setHoursWorked(int hoursWorked) {
-        this.hoursWorked = hoursWorked;
-    }
+        public int getEmployeeId() {
+            return employeeId;
+        }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+        public String getName() {
+            return name;
+        }
 
-    public void setEmployeeId(int employeeId) {
-        this.employeeId = employeeId;
-    }
+        public double getHoursWorked() {
+            return hoursWorked;
+        }
 
-    public int getEmployeeId()
-    {
-
-        return employeeId;
+        public double getPayRate() {
+            return payRate;
+        }
     }
-
-    public double getGrossPay()
-    {
-        return hoursWorked * payRate;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public double getHoursWorked() {
-        return hoursWorked;
-    }
-
-    public double getPayRate() {
-        return payRate;
-    }
-}
